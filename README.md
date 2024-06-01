@@ -40,7 +40,8 @@ ciphertext bitmap:
 
 convert output/example.pbm -strip output/example.png
 ```
-An creates this:
+And creates this:
+
 ![avatar](output/example.png)
 
 (`decode.pl` left as exercise to the reader...)
