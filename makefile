@@ -12,7 +12,7 @@ output/example.png: output/example.pbm
 	convert $@ -negate output/gradient_levels_bright.png -clut $(basename $@).terminal-bright$(suffix $@)
 	rm output/gradient_levels.png output/gradient_levels_bright.png
 
-output/example.pbm: encode.pl hint-110010.pbm secret.txt font-5x5.txt
+output/example.pbm: encode.pl hints/hint-110010.pbm secret.txt fonts/font-5x5.txt
 	mkdir -p $(@D)
 	./$< -H $(filter-out $<,$^) $@
 
